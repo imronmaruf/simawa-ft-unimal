@@ -1,6 +1,7 @@
 @extends('frontend.layouts.main')
 @section('content')
     @include('frontend.partials.breadcrumb')
+
     <!-- ======= Blog Section ======= -->
     <section id="blog" class="blog">
         <div class="container" data-aos="fade-up">
