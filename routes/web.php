@@ -6,6 +6,8 @@ use App\Http\Controllers\Frontend\BeritaController;
 use App\Http\Controllers\Frontend\GaleriController;
 use App\Http\Controllers\Frontend\LandingController;
 use App\Http\Controllers\Frontend\InstansiController;
+use App\Http\Controllers\Backend\AdminDashboardController;
+use App\Http\Controllers\Backend\SuperAdminDashboardController;
 
 
 
@@ -20,8 +22,8 @@ use App\Http\Controllers\Frontend\InstansiController;
 |
 */
 
-// Route::get('/', function () {
-//     return view('welcome');
+// Route::get('/dashboard', function () {
+//     return view('backend.index');
 // });
 
 
@@ -34,4 +36,21 @@ Route::get('/galeri', [GaleriController::class,  'index'])->name('galeri');
 
 
 // Authentication
-Route::get('/login', [LoginController::class, 'index']);
+Route::middleware('guest')->group(function () {
+    Route::get('/login', [LoginController::class, 'index'])->name('login');
+    Route::post('/login', [LoginController::class, 'authenticate']);
+});
+
+
+Route::get('/logout', [LoginController::class, 'logout'])->name('logout');
+
+
+// SuperAdmin access
+Route::middleware(['auth', 'userAkses:1'])->group(function () {
+    Route::get('/dashboard', [SuperAdminDashboardController::class, 'index'])->name('dashboard.superadmin');
+});
+
+// Admin access
+Route::middleware(['auth', 'userAkses:2'])->group(function () {
+    Route::get('/admin/dashboard', [AdminDashboardController::class, 'index'])->name('dashboard.admin');
+});

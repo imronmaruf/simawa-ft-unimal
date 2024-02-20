@@ -12,6 +12,8 @@
     <link href="{{ asset('backend/assets/vendor/dropzone/dist/dropzone.css') }}" rel="stylesheet">
     <link href="{{ asset('backend/assets/vendor/@mdi/font/css/materialdesignicons.min.css') }}" rel="stylesheet" />
     <link href="{{ asset('backend/assets/vendor/prismjs/themes/prism-okaidia.css') }}" rel="stylesheet">
+    <link href="{{ asset('node_modules/sweatalert2/dist/sweetalert2.min.css') }}" rel="stylesheet">
+
     <link rel="stylesheet" href="{{ asset('backend/assets/css/theme.css') }}">
 </head>
 
@@ -31,6 +33,7 @@
     <!-- Scripts -->
     <!-- Libs JS -->
     <script src="{{ asset('backend/assets/vendor/jquery/dist/jquery.min.js') }}"></script>
+    <script src="{{ asset('node_modules/sweatalert2/dist/sweetalert2.min.js') }}"></script>
     <script src="{{ asset('backend/assets/vendor/bootstrap/dist/js/bootstrap.bundle.min.js') }}"></script>
     <script src="{{ asset('backend/assets/vendor/jquery-slimscroll/jquery.slimscroll.min.js') }}"></script>
     <script src="{{ asset('backend/assets/vendor/feather-icons/dist/feather.min.js') }}"></script>
@@ -44,4 +47,13 @@
     <script src="{{ asset('backend/assets/js/alpinejs.min.js') }}"></script>
     <script src="{{ asset('backend/assets/js/feather.js') }}"></script>
     <script src="{{ asset('backend/assets/js/sidebarMenu.js') }}"></script>
+
+    <script>
+        Swal.fire({
+            title: 'Error!',
+            text: 'Do you want to continue',
+            icon: 'error',
+            confirmButtonText: 'Cool'
+        })
+    </script>
 </body>
