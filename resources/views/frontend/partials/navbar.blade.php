@@ -16,10 +16,10 @@
                     <ul>
                         <li class="dropdown"><a href="#"><span>FAKULTAS</span>
                                 <i class="bi bi-chevron-right"></i></a>
+
                             <ul>
                                 <li><a href="{{ url('/instansi/ft') }}">Badan Eksekutif Mahasiswa</a></li>
                                 <li><a href="#">Dewan Perwakilan Mahasiswa</a></li>
-
                             </ul>
                         </li>
 

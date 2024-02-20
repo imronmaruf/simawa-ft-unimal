@@ -3,6 +3,7 @@
 namespace App\Http\Controllers\Frontend;
 
 use App\Http\Controllers\Controller;
+use App\Models\User;
 use Illuminate\Http\Request;
 
 class LandingController extends Controller
@@ -13,16 +14,12 @@ class LandingController extends Controller
     public function index()
     {
         $title = 'Beranda';
-        return  view('frontend.index',compact ('title'));
+        return  view('frontend.index', compact('title'));
     }
 
     /**
      * Show the form for creating a new resource.
      */
-    public function create()
-    {
-        //
-    }
 
     /**
      * Store a newly created resource in storage.

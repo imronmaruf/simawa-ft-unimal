@@ -62,6 +62,16 @@
             <li class="nav-item">
                 <div class="navbar-heading">Anggota ORMAWA</div>
             </li>
+
+
+            {{-- Instansi --}}
+            <li class="nav-item">
+                <a class="nav-link has-arrow " href="./docs/accordions.html">
+                    <i class="bi bi-file-earmark-pdf-fill fw-bold me-2"></i><span class="fw-semi-bold">LPJ</span>
+
+                </a>
+            </li>
+
             <li class="nav-item">
                 <a class="nav-link has-arrow  collapsed " href="#!" data-bs-toggle="collapse"
                     data-bs-target="#navAuthentication" aria-expanded="false" aria-controls="navAuthentication">
