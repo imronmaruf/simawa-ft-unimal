@@ -72,8 +72,8 @@
                         <h3 class="sidebar-title">Kategori</h3>
                         <div class="sidebar-item categories">
                             <ul>
-                                <li><a href="#">General <span>(25)</span></a></li>
-                                <li><a href="#">Lifestyle <span>(12)</span></a></li>
+                                <li><a href="#">Kegiatan<span>(25)</span></a></li>
+                                <li><a href="#">Program Kerja<span>(12)</span></a></li>
                             </ul>
                         </div><!-- End sidebar categories-->
 
@@ -100,7 +100,7 @@
 
                         </div><!-- End sidebar recent posts-->
 
-                        <h3 class="sidebar-title">Tags</h3>
+                        <h3 class="sidebar-title">Tag</h3>
                         <div class="sidebar-item tags">
                             <ul>
                                 <li><a href="#">App</a></li>

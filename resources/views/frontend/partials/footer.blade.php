@@ -21,6 +21,8 @@
                         <ul>
                             <li><i class="bi bi-chevron-right"></i> <a href="#">Home</a></li>
                             <li><i class="bi bi-chevron-right"></i> <a href="#tentangkami">Tentang Kami</a></li>
+                            <li><i class="bi bi-chevron-right"></i> <a href="{{ route('login') }}">Dsshboard Admin</a>
+                            </li>
                         </ul>
                     </div>
                     <div class="col-lg-4 col-md-12 footer-contact text-center text-md-start">
@@ -28,9 +30,7 @@
                         <p><i class="fa-solid fa-location-dot"></i>&nbsp;
                             Jl. Batam, Blang Pulo, Kec. Muara Satu, Kota Lhokseumawe
                             Provinsi Aceh, Indonesia
-                            <br><br>
-                            <strong>Phone:</strong> +1 5589 55488 55<br>
-                            <strong>Email:</strong> info@example.com<br>
+
                         </p>
 
                     </div>
@@ -44,7 +44,8 @@
                 &copy; Copyright <strong><span>ORMAWA FT-UNIMAL</span></strong>. All Rights Reserved
             </div>
             <div class="credits">
-                Developed by <a href="https://bootstrapmade.com/">Imron Ma'ruf F.</a>
+                Designed by <a href="https://bootstrapmade.com/">BoostrapMade</a>
+                Developed by <a href="https://bootstrapmade.com/">BoostrapMade</a>
             </div>
         </div>
     </footer><!-- End Footer -->

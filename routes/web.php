@@ -28,7 +28,7 @@ use App\Http\Controllers\Backend\SuperAdminDashboardController;
 
 
 // User access
-Route::get('/', [LandingController::class, 'index']);
+Route::get('/', [LandingController::class, 'index'])->name('home');
 Route::get('/instansi/ft', [InstansiController::class,  'fakultas'])->name('landing.ft');
 Route::get('/instansi/hmp', [InstansiController::class,  'hmp'])->name('landing.hmp');
 Route::get('/berita', [BeritaController::class,  'index'])->name('berita');

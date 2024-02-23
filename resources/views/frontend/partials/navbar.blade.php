@@ -9,7 +9,7 @@
 
         <nav id="navbar" class="navbar">
             <ul>
-                <li><a class="nav-link scrollto active" href="#hero">Beranda</a></li>
+                <li><a class="nav-link scrollto active" href="{{ route('home') }}">Beranda</a></li>
                 {{-- <li><a class="getstarted scrollto" href="#hero">Beranda</a></li> --}}
                 <li class="dropdown"><a href="#"><span>ORMAWA FT-UNIMAL</span>
                         <i class="bi bi-chevron-down"></i></a>
@@ -39,8 +39,8 @@
 
 
                 <li><a class="nav-link scrollto" href="#tentangkami">Tentang Kami</a></li>
-                <li><a class="nav-link scrollto" href="#artikel">Berita</a></li>
-                <li><a class="nav-link scrollto" href="#galeri">Galeri</a></li>
+                <li><a class="nav-link scrollto" href="{{ route('berita') }}">Berita</a></li>
+                <li><a class="nav-link scrollto" href="{{ route('galeri') }}">Galeri</a></li>
                 <li><a class="nav-link scrollto" href="#kontak">Kontak</a></li>
             </ul>
             <i class="bi bi-list mobile-nav-toggle"></i>
